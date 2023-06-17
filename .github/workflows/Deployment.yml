@@ -1,5 +1,5 @@
 name: Deploy Project
-on: push
+on: [push, workflow_dispatch]   # when code is pushed this workflow runs, also user can manually run this workflow
 jobs:
     test:
         runs-on: ubuntu-latest
